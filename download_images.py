@@ -5,7 +5,6 @@ from PIL import Image
 from io import BytesIO
 import glob
 
-# Danh sách chủ đề phổ biến
 TOPICS = [
     'cá', 'chó', 'mèo', 'biển', 'hoa', 'xe', 'gấu', 'rừng', 'sách', 'thời trang', 'tranh', 'báo', 'nhà', 'rạp phim', 'vịt', 'IT'
 ]
@@ -16,7 +15,6 @@ IMAGES_PER_TOPIC = 3
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 def count_images_for_topic(topic):
-    # Đếm số file có tên chứa chủ đề (không phân biệt hoa thường/hoa hoa)
     files = glob.glob(os.path.join(SAVE_DIR, f"*{topic.replace(' ', '_')}*.jpg"))
     return len(files)
 
