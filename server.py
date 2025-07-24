@@ -12,7 +12,6 @@ import json
 from datetime import datetime
 from collections import Counter
 import faiss
-# XÓA: from googletrans import Translator
 import unicodedata
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
@@ -99,11 +98,6 @@ SUBJECT_SYNONYMS = {
     'xe': 'xe', 'car': 'xe', 'oto': 'xe', 'automobile': 'xe', 'vehicle': 'xe', 'truck': 'xe', 'bus': 'xe', 'motorbike': 'xe', 'bike': 'xe', 'bicycle': 'xe', 'scooter': 'xe',
 }
 
-# Bỏ secret_key và session
-
-# Bỏ các route /login, /logout và decorator login_required
-
-# Chuỗi giao diện đa ngôn ngữ
 LANGS = {
     'vi': {
         'brand': 'DeepVision Search',
