@@ -1,0 +1,3 @@
+Pillow
+Flask
+# Đã loại bỏ tensorflow-macos vì không còn dùng TensorFlow

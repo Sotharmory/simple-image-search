@@ -1,0 +1,246 @@
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/sis/server.py", line 3, in <module>
+    from flask import Flask, request, render_template, redirect, url_for
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/sis/server.py", line 3, in <module>
+    from flask import Flask, request, render_template, redirect, url_for
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/sis/server.py", line 3, in <module>
+    from flask import Flask, request, render_template, redirect, url_for
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/sis/server.py", line 3, in <module>
+    from flask import Flask, request, render_template, redirect, url_for
+ModuleNotFoundError: No module named 'flask'
+ * Serving Flask app 'server'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.2.2:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 393-613-498
+127.0.0.1 - - [18/Jul/2025 18:11:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "POST /search HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[32mGET /static/img/cho_23.jpg HTTP/1.1[0m" 302 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[32mGET /static/img/cho_2.jpg HTTP/1.1[0m" 302 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/chó_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/cho_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/chó_4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/chó_6.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/cho_86.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "GET /static/img/query_tmp.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/chó_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/chó_8.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/chó_5.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/chó_3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:22] "[36mGET /static/img/chó_7.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:23] "[35m[1mGET /image/cho_23.jpg HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/sis/server.py", line 302, in image_detail
+    return render_template('image_detail.html', filename=filename, info=info, lang=lang, t=LANGS[lang])
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/macbook/Downloads/sis/.venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/macbook/Downloads/sis/templates/image_detail.html", line 23, in top-level template code
+    {% if info and info.feature %}
+    ^^^^^^^^^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+127.0.0.1 - - [18/Jul/2025 18:11:23] "[36mGET /image/cho_23.jpg?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:23] "[36mGET /image/cho_23.jpg?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:23] "GET /image/cho_23.jpg?__debugger__=yes&cmd=resource&f=console.png&s=W5vl3UN5ncNoXGnBkBMW HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:59] "POST /search HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:59] "GET /static/img/query_tmp.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:11:59] "[36mGET /static/img/ca_86.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:59] "[36mGET /static/img/cá_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:59] "[36mGET /static/img/cá_3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:11:59] "[36mGET /static/img/cá_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:14:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "POST /search_text HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/meo_86.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/mèo_8.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/mèo_6.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/mèo_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/mèo_3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/mèo_5.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/mèo_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/mèo_4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/mèo_7.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/meo_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:00] "[36mGET /static/img/meo_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:17] "POST /search_text HTTP/1.1" 200 -
+127.0.0.1 - - [18/Jul/2025 18:15:17] "[36mGET /static/img/biển_5.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:17] "[36mGET /static/img/biển_8.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:17] "[36mGET /static/img/biển_7.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:17] "[36mGET /static/img/biển_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:17] "[36mGET /static/img/biển_4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:17] "[36mGET /static/img/biển_3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:17] "[36mGET /static/img/biển_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Jul/2025 18:15:17] "[36mGET /static/img/biển_6.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2025 00:20:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2025 00:20:53] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [19/Jul/2025 00:20:53] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [19/Jul/2025 00:20:53] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+127.0.0.1 - - [19/Jul/2025 00:20:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2025 00:20:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2025 00:20:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2025 00:20:56] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [19/Jul/2025 00:20:56] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+127.0.0.1 - - [19/Jul/2025 00:20:56] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [19/Jul/2025 00:20:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2025 00:20:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2025 00:20:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:24:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:24:16] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [20/Jul/2025 01:24:16] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [20/Jul/2025 01:24:16] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+127.0.0.1 - - [20/Jul/2025 01:24:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:24:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:24:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:24:18] "GET /about?lang=vi HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:37:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:37:29] "GET /about?lang=vi HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:38:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "POST /search HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "GET /static/img/chó_7.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "[36mGET /static/img/chó_4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "GET /static/img/cho_23.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "[36mGET /static/img/cho_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "GET /static/img/cho_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "GET /static/img/query_tmp.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "[36mGET /static/img/chó_8.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "[36mGET /static/img/cho_86.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "[36mGET /static/img/chó_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "[36mGET /static/img/chó_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "[36mGET /static/img/chó_6.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "[36mGET /static/img/chó_5.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:38:59] "[36mGET /static/img/chó_3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "POST /search_text HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "GET /static/img/mèo_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "[36mGET /static/img/mèo_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "[36mGET /static/img/mèo_4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "[36mGET /static/img/mèo_8.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "[36mGET /static/img/mèo_6.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "[36mGET /static/img/meo_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "[36mGET /static/img/mèo_7.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "[36mGET /static/img/meo_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "GET /static/img/meo_86.webp HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "[36mGET /static/img/mèo_3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2025 01:39:03] "GET /static/img/mèo_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:39:08] "[31m[1mGET /search_text?lang=vi HTTP/1.1[0m" 405 -
+127.0.0.1 - - [20/Jul/2025 01:39:11] "GET /about?lang=vi HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2025 01:39:13] "GET / HTTP/1.1" 200 -
+ * Detected change in '/Users/macbook/Downloads/sis/download_images.py', reloading
+--- Search query: mèo
+--- Normalized query: meo
+--- Matched subject by synonym: mèo
+--- Filtered images: 11
+--- Final results: [('mèo_5.jpg', -76.82357025146484), ('meo_86.webp', -77.75379180908203), ('mèo_3.jpg', -77.76946258544922)] ...
+--- Search query: biển
+--- Normalized query: bien
+--- Matched subject by synonym: biển
+--- Filtered images: 8
+--- Final results: [('biển_3.jpg', -71.51173400878906), ('biển_2.jpg', -72.8837661743164), ('biển_8.jpg', -74.5193862915039)] ...
+--- Search query: mèo
+--- Normalized query: meo
+--- Matched subject by synonym: mèo
+--- Filtered images: 11
+--- Final results: [('mèo_5.jpg', -76.82357025146484), ('meo_86.webp', -77.75379180908203), ('mèo_3.jpg', -77.76946258544922)] ...
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 393-613-498
+127.0.0.1 - - [21/Jul/2025 16:32:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 16:32:51] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [21/Jul/2025 16:32:51] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [21/Jul/2025 16:32:51] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+127.0.0.1 - - [21/Jul/2025 16:32:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 16:32:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 16:32:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "POST /search HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "GET /static/img/chó_8.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "[36mGET /static/img/cho_23.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "GET /static/img/chó_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "GET /static/img/chó_7.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "[36mGET /static/img/cho_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "[36mGET /static/img/cho_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "[36mGET /static/img/chó_4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "[36mGET /static/img/chó_3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "GET /static/img/query_tmp.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "[36mGET /static/img/chó_1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "[36mGET /static/img/chó_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "[36mGET /static/img/cho_86.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Jul/2025 17:35:46] "[36mGET /static/img/chó_6.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Jul/2025 17:44:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 17:44:30] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [21/Jul/2025 17:44:30] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [21/Jul/2025 17:44:30] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+127.0.0.1 - - [21/Jul/2025 17:44:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 17:44:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jul/2025 17:44:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 14:05:54] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 14:05:54] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 14:05:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 14:05:54] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 14:05:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 14:05:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 14:05:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 14:06:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 14:06:29] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 14:06:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:24:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:24:02] "[32mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 15:24:02] "[32mGET /apple-touch-icon.png HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 15:24:02] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 15:24:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:24:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:24:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "POST /search HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "GET /static/img/query_tmp.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "GET /static/img/biển_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "GET /static/img/biển_8.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "GET /static/img/biển_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "GET /static/img/biển_6.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "GET /static/img/biển_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "GET /static/img/biển_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "GET /static/img/biển_7.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:20] "[36mGET /static/img/biển_3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "POST /search_text HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "GET /static/img/meo_86.webp HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "[36mGET /static/img/mèo_5.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "[36mGET /static/img/mèo_6.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "[36mGET /static/img/meo_2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "GET /static/img/mèo_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "GET /static/img/mèo_8.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "GET /static/img/mèo_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "GET /static/img/mèo_7.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "GET /static/img/mèo_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "GET /static/img/meo_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 15:42:41] "GET /static/img/mèo_2.jpg HTTP/1.1" 200 -
